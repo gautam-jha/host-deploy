@@ -2,13 +2,15 @@
   <div class="host-container">
     {{ getTitle() }}
     <div class="mfe-container">
-      <mfe-app></mfe-app>
+      <Suspense>
+        <mfe-app></mfe-app>
+      </Suspense>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue"
+import { ref, Suspense } from "vue"
 import MfeApp from "remote/Mfe";
 const title = ref("Host container")
 const getTitle = () => {
