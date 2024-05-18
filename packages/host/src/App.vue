@@ -1,6 +1,6 @@
 <template>
   <div class="host-container">
-    Host container
+    {{ title }}
     <div class="mfe-container">
       <mfe-app></mfe-app>
     </div>
@@ -8,7 +8,10 @@
 </template>
 
 <script setup>
+import { ref } from "vue"
 import MfeApp from "remote/Mfe";
+const title = ref("Host container")
+
 </script>
 
 <style scoped>
