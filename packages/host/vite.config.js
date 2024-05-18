@@ -13,7 +13,7 @@ export default defineConfig({
     federation({
       name: "host-app",
       remotes: {
-        remote: "http://localhost:4174/assets/mfeRemoteEntry.js",
+        remote: "https://gautam-jha.github.io/mfe-deploy/assets/mfeRemoteEntry.js",
       },
       // shared: ["vue"],
     }),
