@@ -6,7 +6,10 @@ import federation from "@originjs/vite-plugin-federation";
 export default defineConfig({
   base:'./',
   build: {
-    target: 'esnext' //browsers can handle the latest ES features
+    modulePreload: false,
+    minify: false,
+    cssCodeSplit: false,
+    target: 'esnext',
   },
   plugins: [
     vue(),
