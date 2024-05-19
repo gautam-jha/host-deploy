@@ -18,7 +18,7 @@ export default defineConfig({
       remotes: {
         remote: "https://gautam-jha.github.io/mfe-deploy/assets/mfeRemoteEntry.js",
       },
-      // shared: ["vue"],
+      shared: ["vue"],
     }),
   ],
 });
